@@ -20,7 +20,7 @@ Implementation using Python code
 Testing the server and client 
 
 ## PROGRAM:
-```
+```py
 SERVER.py:
 
 import socket
@@ -54,15 +54,18 @@ PORT = 65432  # The port used by the server
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
-    s.sendall(b"Hello, world")
+    s.sendall(b"SHARUKESH")
     data = s.recv(1024)
 
 
 print(f"Received {data!r}")
 ```
-## OUTPUT:
-![Screenshot from 2023-05-13 14-17-58](https://github.com/RICHARDKALVIN/Echoserver/assets/119404920/13d5bd03-953d-4642-bb43-cb5b5eeb5185)
-![image](https://github.com/RICHARDKALVIN/Echoserver/assets/119404920/a635871c-33c2-4574-8395-136d8825d51e)
+## CLIENT OUTPUT:
+
+![Screenshot 2024-09-04 190245](https://github.com/user-attachments/assets/a81dc1fc-7491-4fc6-aac9-d72bd20a5065)
+
+## SERVER OUTPUT:
+![Screenshot 2024-09-04 190232](https://github.com/user-attachments/assets/926eb136-45ea-440b-8dcf-72f301a9b0c3)
 
 ## RESULT:
 The program is executed successfully
